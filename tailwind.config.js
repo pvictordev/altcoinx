@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'sans' : ['Titillium Web','sans-serif' ]
+      },
+      gradientColorStops: {
+        'custom-start': '#0f051d',
+        'custom-end': '#23034d',
+      }
+    },
   },
   plugins: [],
 } 
