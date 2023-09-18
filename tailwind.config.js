@@ -12,7 +12,12 @@ export default {
       gradientColorStops: {
         'custom-start': '#0f051d',
         'custom-end': '#23034d',
-      }
+      }, 
+      'reset': {
+        margin: '0',
+        padding: '0',
+        boxSizing: 'border-box',
+      },
     },
   },
   plugins: [],
