@@ -50,10 +50,12 @@ const Home = () => {
 
       </div>
       
-      <div className="hero__scroll flex flex-col justify-center items-center">
+      <a href='#market' className="hero__scroll flex flex-col justify-center items-center mb-10 cursor-pointer">
         <p>Take a look</p>
         <AiOutlineArrowDown/>
-      </div>
+      </a>
+
+      
       
     </div>
   )
