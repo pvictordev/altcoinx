@@ -6,7 +6,7 @@ const Nav = () => {
     <div className='nav flex flex-row items-center justify-around p-10'>
         <h1 className='nav__logo font-bold text-4xl'>ALTCOINX</h1>
 
-        <ul className="nav__menu list-none flex flex-row items-center justify-between space-x-9 text-2xl">
+        <ul className="nav__menu list-none flex flex-row items-center justify-between space-x-12 text-2xl">
             <li className='menu__home'>Home</li>
             <li className='menu__market'>Market</li>
             <li className='menu__offer'>Offer</li>
