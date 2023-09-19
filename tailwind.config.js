@@ -18,7 +18,11 @@ export default {
         padding: '0',
         boxSizing: 'border-box',
       },
+      keyframes: {
+      },
+      
     },
   },
   plugins: [],
 } 
+
