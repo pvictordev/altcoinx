@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'sans' : ['Titillium Web','sans-serif' ]
+        'space-grotesk' : ['Space Grotesk','sans' ]
       },
       gradientColorStops: {
         'custom-start': '#0f051d',
-        'custom-end': '#23034d',
+        'custom-end': '#080749  ',
       }, 
       'reset': {
         margin: '0',

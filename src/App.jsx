@@ -7,7 +7,7 @@ import Join from './components/Join';
 
 function App() {
   return (
-    <div className='app'>
+    <div className='app font-space-grotesk'>
       <Home/>
       <Market/>
       <Offer/>
