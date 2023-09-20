@@ -20,7 +20,14 @@ export default {
       },
       keyframes: {
       },
-      
+      screens: {
+        'xl-max': { 'max': '1280px' },
+        'lg-max': { 'max': '1024px' },
+        'md-max': { 'max': '768' },
+        'sm-max': { 'max': '640px' },
+        
+
+      },
     },
   },
   plugins: [],

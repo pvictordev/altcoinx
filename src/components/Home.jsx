@@ -14,12 +14,12 @@ const Home = () => {
       <div className="hero__content flex flex-col items-center justify-center">
 
         <div className="hero__content-text flex flex-row">
-            <img className="w-16 h-16 animate-bounce xl:w-20 xl:h-20" src="./src/assets/bitcoin-coin.png" alt="" />
-              <h1 className="font-bold text-6xl break-words text-center leading-tight xl:text-8xl">TRACK AND BUY
+            <img className="w-20 h-20 animate-bounce" src="./src/assets/bitcoin-coin.png" alt="" />
+              <h1 className="font-bold text-8xl break-words text-center leading-tight">TRACK AND BUY
               <br/>
               <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600'>CRYPTO CURRENCIES</span>
               </h1>
-            <img className="w-16 h-16 animate-bounce xl:w-20 xl:h-20 " src="./src/assets/ethereum-coin.png" alt="" />
+            <img className="w-20 h-20 animate-bounce" src="./src/assets/ethereum-coin.png" alt="" />
           
         </div>
 
