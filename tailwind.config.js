@@ -22,9 +22,11 @@ export default {
       },
       screens: {
         'xl-max': { 'max': '1280px' },
+        'l-max': {'max' : '900px'},
         'lg-max': { 'max': '1024px' },
         'md-max': { 'max': '768' },
         'sm-max': { 'max': '640px' },
+        'xs-max': {'max' : '450px'},
         
 
       },
