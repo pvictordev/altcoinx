@@ -17,8 +17,8 @@ const Nav = () => {
             <a href="#join"className='menu__join text-lg font-bold cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 transition-color duration-150'>Join</a>
         </ul>
         <div className="nav__socials flex flex-row items-center justify-between gap-6 ">
-            <BiLogoTwitter style={{ fontSize: '1.7rem', cursor:'pointer' }} />
-            <BiLogoDiscordAlt style={{ fontSize: '1.7rem', cursor:'pointer' }}/>
+            <BiLogoTwitter style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} />
+            <BiLogoDiscordAlt style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }}/>
             {/* <BiLogoInstagram style={{ fontSize: '1.7rem', cursor:'pointer' }}/> */}
             <AiOutlineMenu className='hidden cursor-pointer l-max:block'/>
         </div>

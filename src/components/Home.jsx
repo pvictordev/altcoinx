@@ -5,7 +5,7 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 const Home = () => {
   return (
 
-    <div id="home"className="hero__section w-full h-screen bg-gradient-to-b from-custom-end to-custom-start flex flex-col gap-20 lg-max:gap-14 ">
+    <div id="home" className="hero__section w-full h-screen bg-gradient-to-b from-custom-end to-custom-start flex flex-col gap-20 lg-max:gap-14 ">
     
       <Nav/>
 
@@ -21,9 +21,9 @@ const Home = () => {
           
         </div>
 
-        <a href="market" className='hidden text-2xl font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 pl-7 p-5 rounded-3xl mt-20 sm-max:block text-center'>Market <AiOutlineArrowDown className='inline'/></a>
+        <a href="#market" className='hidden text-2xl font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 pl-7 p-5 rounded-3xl mt-20 sm-max:block text-center'>Market <AiOutlineArrowDown className='inline'/></a>
 
-        <div className="hero__content-slider flex flex-row justify-between gap-20 mt-14 text-center items-center lg-max:grid lg-max:grid-cols-2 l-max:gap-7 sm-max:hidden">
+        <div className="hero__content-slider flex flex-row justify-between gap-20 mt-14 text-center items-center lg-max:grid lg-max:grid-cols-2  lg-max:gap-y-7 lg-max:gap-x-60  l-max:gap-x-40 sm-max:hidden">
           <a href="" className='flex flex-col items-center'>
             <img src="src/assets/bitcoin.png" alt="" className="w-20 mb-3" />
             <p className="text-1xl font-bold">Bitcoin <span className='text-2xl text-green-500'>5.35%</span></p>
