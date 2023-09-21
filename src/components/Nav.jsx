@@ -19,7 +19,6 @@ const Nav = () => {
         <div className="nav__socials flex flex-row items-center justify-between gap-6 ">
             <BiLogoTwitter style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} />
             <BiLogoDiscordAlt style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }}/>
-            {/* <BiLogoInstagram style={{ fontSize: '1.7rem', cursor:'pointer' }}/> */}
             <AiOutlineMenu className='hidden cursor-pointer l-max:block'/>
         </div>
         
