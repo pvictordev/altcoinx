@@ -20,7 +20,7 @@ const Market = () => {
                         <p>Circulating Supply</p> */}
                     </div>
                     <ul className="list__row flex flex-col ">
-                        <li className='flex flex-row justify-between py-8 text-center px-4 border-b border-double hover:bg-indigo-600 hover:bg-opacity-10 items-center overflow-scroll'>
+                        <li className='flex flex-row justify-between py-8 text-center px-4 border-b border-double hover:bg-indigo-600 hover:bg-opacity-10 items-center'>
                             <p className='text-2xl flex items-center gap-2 sm-max:text-xl'><img src="src/assets/bitcoin.png" alt="" className="w-12 inline sm-max:w-8" /> Bitcoin</p>
                             <p className='text-2xl items-center flex sm-max:text-xl'>$26,464.00</p>
                             <p className='text-2xl sm-max:hidden text-red-500'>-2.61%</p>
