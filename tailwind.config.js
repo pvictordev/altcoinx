@@ -27,7 +27,7 @@ export default {
         'md-max': { 'max': '768' },
         'sm-max': { 'max': '640px' },
         'xs-max': {'max' : '450px'},
-        
+        'xxs-max':{'max' : '350px'}
 
       },
     },

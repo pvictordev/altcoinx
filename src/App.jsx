@@ -4,6 +4,9 @@ import Home from './components/Home'
 import Market from './components/Market';
 import Offer from './components/Offer';
 import Join from './components/Join';
+import Footer from './components/Footer';
+
+
 
 function App() {
   return (
@@ -12,6 +15,7 @@ function App() {
       <Market/>
       <Offer/>
       <Join/>
+      <Footer/>
     </div>
   )
 }
