@@ -1,15 +1,9 @@
-import React from 'react'
-import Nav from './Nav'
-import Hero from './Hero'
+import React, {useState} from 'react'
+import {AiOutlineArrowDown} from "react-icons/ai"
 
-const Home = () => {
+const Hero = () => {
   return (
-
-    <section id="home" className="hero__section w-full h-screen bg-gradient-to-b from-custom-end to-custom-start flex flex-col gap-20 lg-max:gap-14 ">    
-      <Nav/>
-      <Hero/>
-
-      {/* <div className="hero__content flex flex-col items-center justify-center">
+    <div className="hero__content flex flex-col items-center justify-center mt-44">
 
         <div className="hero__content-text flex flex-row">
             <img className="w-20 h-20 animate-bounce l-max:hidden" src="./src/assets/bitcoin-coin.png" alt="" />
@@ -52,11 +46,8 @@ const Home = () => {
         </div>
 
 
-      </div> */}
-      
-    </section>
+      </div>
   )
 }
 
-export default Home
-
+export default Hero

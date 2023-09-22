@@ -28,8 +28,10 @@ export default {
         'sm-max': { 'max': '640px' },
         'xs-max': {'max' : '450px'},
         'xxs-max':{'max' : '350px'}
-
       },
+      colors: {
+        'dark': '#0f051d'
+      }
     },
   },
   plugins: [],
