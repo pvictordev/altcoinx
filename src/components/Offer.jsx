@@ -42,7 +42,7 @@ const Offer = () => {
             <div className='offer__content-3 flex flex-col gap-y-10'>
             <OfferBox 
               img={<RiNftFill style={{fontSize:'2rem'}}/>}
-              title={'RECEIVE YOUR OWN NFT\'\S'}
+              title={'RECEIVE YOUR OWN NFT'}
               text={'Invest all your crypto at one place on one platform.'}
             />
 
