@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {BiLogoTwitter, BiLogoDiscordAlt, BiLogoInstagram} from 'react-icons/bi'
+import {BiLogoTwitter, BiLogoDiscordAlt} from 'react-icons/bi'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 
@@ -25,15 +25,14 @@ const Nav = () => {
     };
   }, []);
 
-  const navClasses = `nav fixed w-full z-50 justify-center flex flex-row p-12 mx-auto gap-60 lg-max:gap-28 xl-max:gap-40 l-max:max-w-none l-max:justify-between l-max:m-0 xs-max:pt-12 xs-max:pb-12 xs-max:pr-4 xs-max:pl-4 ${
-    scrollY > 50 ? 'bg-dark text-white' : ''
+  const navClasses = `nav fixed w-full z-50 justify-center flex flex-row p-12 mx-auto gap-56 lg-max:gap-28 xl-max:gap-40 l-max:max-w-none l-max:justify-between l-max:m-0 xs-max:pt-12 xs-max:pb-12 xs-max:pr-4 xs-max:pl-4 ${
+    scrollY > 50 ? 'bg-dark' : ''
   }`;
-  // 'nav fixed w-full z-50 justify-center flex flex-row p-12 mx-auto gap-60 lg-max:gap-28 xl-max:gap-40 l-max:max-w-none l-max:justify-between l-max:m-0 xs-max:pt-12 xs-max:pb-12 xs-max:pr-4 xs-max:pl-4'
   return (
     
     <nav className={navClasses}>
-        {/* <h1 className='nav__logo font-bold text-3xl tracking-tighter'>ALTCOINX</h1> */}
-        <img className="w-28 h-5" src="src/assets/altcoinx-logo.png" alt="" />
+        <h1 className='nav__logo font-bold text-3xl tracking-widest'>ALTCOINX</h1>
+        {/* <img className="w-28 h-5" src="src/assets/altcoinx-logo.png" alt="" /> */}
         
           <ul className='nav__menu list-none gap-14 flex flex-row l-max:hidden'>
             <li>
@@ -66,7 +65,7 @@ const Nav = () => {
 
             <div>
 
-          <AiOutlineClose style={{fontSize:'1.5rem'}} className='top-12 right-14 absolute cursor-pointer' onClick={toggleMenu}/> 
+          <AiOutlineClose style={{fontSize:'1.5rem'}} className='top-14 right-12 absolute cursor-pointer xs-max:right-4' onClick={toggleMenu}/> 
         </div>
 
         </ul>
@@ -74,8 +73,8 @@ const Nav = () => {
         
 
         <div className="nav__socials flex flex-row items-center justify-between gap-6 ">
-            <BiLogoTwitter style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} />
-            <BiLogoDiscordAlt style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }}/>
+            <BiLogoTwitter style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} className='xs-max:hidden' />
+            <BiLogoDiscordAlt style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} className='xs-max:hidden'/>
 
             <AiOutlineMenu style={{fontSize:'1.5rem'}} className='hidden cursor-pointer l-max:block' onClick={toggleMenu}/>
   

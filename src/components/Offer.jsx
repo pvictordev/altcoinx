@@ -10,7 +10,7 @@ import {BsCollection} from 'react-icons/bs'
 const Offer = () => {
   return (
     <div>
-      <section id="offer" className="offer bg-gradient-to-b from-custom-start to-custom-start p-20">
+      <section id="offer" className="offer bg-gradient-to-b from-custom-start to-custom-start p-20 pb-40">
         <div className='offer__container'>
           <h1 className='text-6xl text-center mb-20 font-bold'>Our <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 '>Offer</span></h1>
 
@@ -39,7 +39,7 @@ const Offer = () => {
               <img src='src/assets/currency(2).png' className='center'></img>
             </div>
 
-            <div className='offer__content-3 flex flex-col gap-y-10'>
+            <div className='offer__content-3 flex flex-col gap-y-10 '>
             <OfferBox 
               img={<RiNftFill style={{fontSize:'2rem'}}/>}
               title={'RECEIVE YOUR OWN NFT'}

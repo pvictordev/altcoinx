@@ -3,8 +3,8 @@ import React from 'react'
 const Market = () => {
   return (
     <section id='market' className="market bg-gradient-to-b from-custom-start to-custom-start">
-        <div className="market__container flex flex-col">
-            <div className="market__content p-20 pt-40 sm-max:p-5 sm-max:pt-20">
+        <div className="market__container flex flex-col px-20 py-40 sm-max:p-5 sm-max:py-20">
+            <div className="market__content">
                 <h2 className='text-4xl font-bold mb-10'>Market</h2>
 
                 <div className="market__list flex flex-col">
