@@ -15,7 +15,7 @@ const Join = () => {
             <img className="w-20 h-20 animate-bounce l-max:hidden" src="./src/assets/currency (3).png" alt="" />
       </div>
 
-      <a href="#home" className='text-2xl text-center font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 p-5 rounded-3xl mt-20 flex mx-auto xs-max:text-xl xs-max:mt-14'>Join via discord</a>
+      <a href="https://discord.com/" className='text-2xl text-center font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 p-5 rounded-3xl mt-20 flex mx-auto xs-max:text-xl xs-max:mt-14'>Join via discord</a>
 
     </section>
   )

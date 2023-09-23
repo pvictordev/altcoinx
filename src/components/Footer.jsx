@@ -6,10 +6,10 @@ const Footer = () => {
     <footer className='footer bg-gradient-to-b from-custom-start to-custom-start pb-20 pt-44'>
         <div className='footer__content  flex flex-col justify-center items-center'>
             <div className='footer__socials flex gap-12 npm rujn dev mb-10'>
-            <BiLogoTwitter style={{ fontSize: '2.7rem', cursor:'pointer', background:'' }} />
-            <BiLogoDiscordAlt style={{ fontSize: '2.7rem', cursor:'pointer', background:'' }}/>
-            <BiLogoFacebook style={{ fontSize: '2.7rem', cursor:'pointer', background:'' }}/>
-            <BiLogoYoutube style={{ fontSize: '2.7rem', cursor:'pointer', background:'' }}/>
+            <a href="https://twitter.com/home"><BiLogoTwitter style={{ fontSize: '2.7rem', cursor:'pointer', background:'' }} /></a>
+            <a href="https://discord.com/"><BiLogoDiscordAlt style={{ fontSize: '2.7rem', cursor:'pointer', background:'' }}/></a>
+            <a href="https://www.facebook.com/"><BiLogoFacebook style={{ fontSize: '2.7rem', cursor:'pointer', background:'' }}/></a>
+            <a href="https://www.youtube.com/"><BiLogoYoutube style={{ fontSize: '2.7rem', cursor:'pointer', background:'' }}/></a>
             </div>
             <div className='footer__socials flex gap-10'>
                 <p className='text-3xl'>Privacy</p>

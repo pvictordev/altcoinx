@@ -73,8 +73,8 @@ const Nav = () => {
         
 
         <div className="nav__socials flex flex-row items-center justify-between gap-6 ">
-            <BiLogoTwitter style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} className='xs-max:hidden' />
-            <BiLogoDiscordAlt style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} className='xs-max:hidden'/>
+            <a href="https://twitter.com/home"><BiLogoTwitter style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} className='xs-max:hidden' /></a>
+            <a href="https://discord.com/"><BiLogoDiscordAlt style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} className='xs-max:hidden'/></a>
 
             <AiOutlineMenu style={{fontSize:'1.5rem'}} className='hidden cursor-pointer l-max:block' onClick={toggleMenu}/>
   

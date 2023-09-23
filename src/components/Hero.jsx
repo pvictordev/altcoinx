@@ -3,10 +3,21 @@ import React, {useState, useEffect} from 'react'
 import {AiOutlineArrowDown} from "react-icons/ai"
 // import axios from 'axios';
 
+
+
+//to paste
 {/* <a href="" className='flex flex-col items-center'>
-    <img src={elems.image} alt="" className="w-20 mb-3" />
-    <p className="text-1xl font-bold">Bitcoin <span className='text-2xl text-green-500'>5.35%</span></p>
-    <p className="text-center text-2xl font-bold">$27,500.05</p>
+<img src={elems.image} alt="" className="w-20 mb-3" />
+
+<p className="text-1xl font-bold uppercase">{elems.symbol} 
+
+<span 
+  className='text-2xl'> {elems.price_change_percentage_24h}%
+</span>
+
+</p>
+
+<p className="text-center text-2xl font-bold">$ {elems.current_price}</p>
 </a> */}
 
 const Hero = () => {
@@ -24,6 +35,7 @@ const Hero = () => {
   },[])
   // console.log(data);
   if(!data) return null
+
   const dataELems = data.map(elems => {
     return (
     <a href="" className='flex flex-col items-center'>
@@ -63,6 +75,7 @@ const Hero = () => {
         <div className="hero__content-slider flex flex-row justify-between gap-20 mt-14 text-center items-center lg-max:grid lg-max:grid-cols-2  lg-max:gap-y-7 lg-max:gap-x-60  l-max:gap-x-40 sm-max:hidden">
 
           {dataELems}
+          
           {/* <a href="" className='flex flex-col items-center'>
             <img src={data[0].image} alt="" className="w-20 mb-3" />
             <p className="text-1xl font-bold">Bitcoin <span className='text-2xl text-green-500'>5.35%</span></p>
