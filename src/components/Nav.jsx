@@ -31,7 +31,7 @@ const Nav = () => {
   return (
     
     <nav className={navClasses}>
-        <h1 className='nav__logo font-bold text-3xl tracking-widest'>ALTCOINX</h1>
+        <a href="#home"><h1 className='nav__logo font-bold text-3xl tracking-widest'>ALTCOINX</h1></a>
         {/* <img className="w-28 h-5" src="src/assets/altcoinx-logo.png" alt="" /> */}
         
           <ul className='nav__menu list-none gap-14 flex flex-row l-max:hidden'>

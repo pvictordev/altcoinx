@@ -4,22 +4,6 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 // import axios from 'axios';
 
 
-
-//to paste
-{/* <a href="" className='flex flex-col items-center'>
-<img src={elems.image} alt="" className="w-20 mb-3" />
-
-<p className="text-1xl font-bold uppercase">{elems.symbol} 
-
-<span 
-  className='text-2xl'> {elems.price_change_percentage_24h}%
-</span>
-
-</p>
-
-<p className="text-center text-2xl font-bold">$ {elems.current_price}</p>
-</a> */}
-
 const Hero = () => {
 
   const [data, setData] = useState(null)
@@ -33,23 +17,23 @@ const Hero = () => {
       console.log(error)
     })
   },[])
-  // console.log(data);
+  //console.log(data);
   if(!data) return null
 
+  
   const dataELems = data.map(elems => {
     return (
     <a href="" className='flex flex-col items-center'>
     <img src={elems.image} alt="" className="w-20 mb-3" />
 
-    <p className="text-1xl font-bold uppercase">{elems.symbol} 
-
-    <span 
-      className='text-2xl'> {elems.price_change_percentage_24h}%
+    <p className='text-1xl font-bold'>{elems.name} <span 
+      className={`text-2xl ${elems.price_change_percentage_24h < 0? 'text-red-600' : 'text-green-500'}`}> 
+      {elems.price_change_percentage_24h.toFixed(2)}%
     </span>
 
     </p>
 
-    <p className="text-center text-2xl font-bold">$ {elems.current_price}</p>
+    <p className="text-center text-2xl font-bold">${elems.current_price.toLocaleString('en-US')}</p>
     </a>
     )
   })
@@ -74,7 +58,7 @@ const Hero = () => {
 
         <div className="hero__content-slider flex flex-row justify-between gap-20 mt-14 text-center items-center lg-max:grid lg-max:grid-cols-2  lg-max:gap-y-7 lg-max:gap-x-60  l-max:gap-x-40 sm-max:hidden">
 
-          {dataELems}
+        {dataELems}
           
           {/* <a href="" className='flex flex-col items-center'>
             <img src={data[0].image} alt="" className="w-20 mb-3" />

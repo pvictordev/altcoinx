@@ -4,7 +4,7 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 
 const Join = () => {
   return (
-    <section id='join' className='join bg-gradient-to-b from-custom-start to-custom-start flex flex-col pt-20 content-center pb-20'>
+    <section id='join' className='join bg-gradient-to-b from-custom-start to-custom-start flex flex-col pt-40 content-center pb-20'>
 
       <div className="hero__content-text flex flex-row uppercase justify-center items-start gap-x-8">
             <img className="w-20 h-20 animate-bounce l-max:hidden" src="./src/assets/currency.png" alt="" />
