@@ -11,7 +11,7 @@ Altcoinx is a website that allows users to access real-time information about va
 
 ## Technologies Used
 The Coindom website is built using the following technologies:
-- **React JS**
+- **React**
 - **Tailwind**
 - **Axios**
 - **Coingecko API**
