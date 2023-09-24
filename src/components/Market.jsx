@@ -42,12 +42,8 @@ const dataElems = data.map(elems => {
                     <div className="list__top flex flex-row justify-between bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 p-4 rounded-t-lg whitespace-break-spaces">
                         <p className='text-2xl'>Coin</p>
                         <p className='text-2xl'>Price</p>
-                        {/* <p>1h %</p> */}
                         <p className='text-2xl sm-max:hidden'>24h %</p>
-                        {/* <p>7d %</p> */}
                         <p className='text-2xl l-max:hidden'>Market Cap</p>
-                        {/* <p>Volume (24h)</p>
-                        <p>Circulating Supply</p> */}
                     </div>
 
                     <ul className="list__row flex flex-col ">

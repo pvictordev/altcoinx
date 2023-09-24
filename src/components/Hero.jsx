@@ -60,29 +60,6 @@ const Hero = () => {
 
         {dataELems}
           
-          {/* <a href="" className='flex flex-col items-center'>
-            <img src={data[0].image} alt="" className="w-20 mb-3" />
-            <p className="text-1xl font-bold">Bitcoin <span className='text-2xl text-green-500'>5.35%</span></p>
-            <p className="text-center text-2xl font-bold">$27,500.05</p>
-          </a>
-          <a href="" className='flex flex-col items-center'> 
-            <img src="src/assets/ethereum.png" alt="" className="w-20 mb-3 items-center" />
-            <p className="text-1xl font-bold">Ethereum <span className='text-2xl text-green-500'>5.10%</span></p>
-            <p className="text-center text-2xl font-bold">$1,700.15</p>
-          </a>
-          <a href="" className='flex flex-col items-center'>
-            <img src="src/assets/tether.png" alt="" className="w-20 mb-3" />
-            <p className="text-1xl font-bold">Tether <span className='text-2xl text-red-500'>-0.03%</span></p>
-            <p className="text-center text-2xl font-bold">$0.99</p>
-
-          </a>
-          <a href="" className='flex flex-col items-center'>
-            <img src="src/assets/bnb.png" alt="" className="w-20 mb-3" />
-            <p className="text-1xl font-bold">BNB <span className='text-2xl text-green-500'>2.25%</span></p>
-            <p className="text-center text-2xl font-bold">$220.15</p>
-
-          </a> */}
-
 
         </div>
 
