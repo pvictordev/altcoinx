@@ -15,6 +15,7 @@ The Coindom website is built using the following technologies:
 - **Tailwind**
 - **Coingecko API**
 - **Axios**
+- **React Router**
 - **Chart.js**
 
 ## Features
