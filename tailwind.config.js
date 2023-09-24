@@ -12,7 +12,7 @@ export default {
       gradientColorStops: {
         'custom-start': '#0f051d',
         'custom-end': '#080749  ',
-      }, 
+      },  
       'reset': {
         margin: '0',
         padding: '0',
@@ -31,7 +31,7 @@ export default {
       },
       colors: {
         'dark': '#0f051d'
-      }
+      },
     },
   },
   plugins: [

@@ -17,7 +17,8 @@ const Hero = () => {
       console.log(error)
     })
   },[])
-  //console.log(data);
+
+  
   if(!data) return null
 
   
@@ -28,7 +29,7 @@ const Hero = () => {
 
     <p className='text-1xl font-bold'>{elems.name} <span 
       className={`text-2xl ${elems.price_change_percentage_24h < 0? 'text-red-600' : 'text-green-500'}`}> 
-      {elems.price_change_percentage_24h.toFixed(2)}%
+      {elems.price_change_percentage_24h.toFixed(3)}%
     </span>
 
     </p>

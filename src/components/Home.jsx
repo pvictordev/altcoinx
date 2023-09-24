@@ -8,7 +8,6 @@ const Home = () => {
     <section id="home" className="hero__section w-full h-screen bg-gradient-to-b from-custom-end to-custom-start flex flex-col gap-20 lg-max:gap-14 ">    
       <Nav/>
       <Hero/>
-      
     </section>
   )
 }
