@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react'
 import {AiOutlineArrowDown} from "react-icons/ai"
+import { Link } from 'react-router-dom';
 // import axios from 'axios';
 
 
@@ -24,6 +25,7 @@ const Hero = () => {
   
   const dataELems = data.map(elems => {
     return (
+    <Link to='/coin/:id'>
     <a href="" className='flex flex-col items-center'>
     <img src={elems.image} alt="" className="w-20 mb-3" />
 
@@ -36,6 +38,7 @@ const Hero = () => {
 
     <p className="text-center text-2xl font-bold">${elems.current_price.toLocaleString('en-US')}</p>
     </a>
+    </Link>
     )
   })
 
