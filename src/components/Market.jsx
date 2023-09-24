@@ -4,6 +4,7 @@ import axios from 'axios';
 const Market = () => {
 
 const [data, setData] = useState(null); 
+const [search, setSearch] = useState('')
 
 
 const urlTrend = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false&locale=en';
@@ -18,8 +19,20 @@ useEffect(() => {
 
   if(!data) return null
 
+  const filteredData = data
+  ? data.filter((elems) =>
+      elems.name.toLowerCase().includes(search.toLowerCase())
+    )
+  : [];
 
-const dataElems = data.map(elems => {
+
+  function handleSearch(event) {
+    setSearch(event.target.value)
+  }
+  
+
+
+const dataElems = filteredData.splice(0,10).map(elems => {
     return (
         <li className='flex flex-row justify-between py-8 text-center px-4 border-b border-double hover:bg-indigo-600 hover:bg-opacity-10 items-center' key={elems.id} >
             <p className='text-2xl flex items-center gap-2 sm-max:text-xl'><img src={elems.image} alt="" className="w-12 inline sm-max:w-8" /> {elems.name}</p>
@@ -36,11 +49,13 @@ const dataElems = data.map(elems => {
             <div className="market__content">
                 <h2 className='text-4xl font-bold mb-10'>Market</h2>
                 
-                {/* <input 
+                <input 
                   type="text" 
                   className='mb-10 w-full bg-indigo-600 bg-opacity-10 p-3 text-2xl border-solid border-2 border-white rounded-xl focus:outline-none focus:border-purple-600' 
+                  value={search}
+                  onChange={handleSearch}
                   placeholder='Search Cryptocurrency'
-                /> */}
+                />
 
                 <div className="market__list flex flex-col">
 
