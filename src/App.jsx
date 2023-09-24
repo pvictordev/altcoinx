@@ -1,21 +1,16 @@
 import React from 'react'
-import './App.css'
-import Home from './components/Home'
-import Market from './components/Market';
-import Offer from './components/Offer';
-import Join from './components/Join';
-import Footer from './components/Footer';
-
-
+import {Route, Routes} from 'react-router-dom';
+import Home from './pages/Home'
+import Crypto from './pages/Crypto.jsx'
 
 function App() {
   return (
     <div className='app font-space-grotesk'>
-      <Home/>
-      <Market/>
-      <Offer/>
-      <Join/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/coin/:id" element={<Crypto />}>
+        </Route>
+      </Routes>
     </div>
   )
 }

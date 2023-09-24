@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const OfferBox = ({img, title, text}) => {
   return (
     <div className='offer__box border-2 p-8 flex flex-col justify-cente rounded-3xl bg-indigo-600/5 gap-2 lg-max:gap-4 xs-max:items-center'>

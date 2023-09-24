@@ -21,7 +21,7 @@ useEffect(() => {
 
   const filteredData = data
   ? data.filter((elems) =>
-      elems.name.toLowerCase().includes(search.toLowerCase())
+      elems.name.toLowerCase().includes(search.toLowerCase()) || elems.symbol.toLowerCase().includes(search.toLowerCase())
     )
   : [];
 
@@ -30,8 +30,6 @@ useEffect(() => {
     setSearch(event.target.value)
   }
   
-
-
 const dataElems = filteredData.splice(0,10).map(elems => {
     return (
         <li className='flex flex-row justify-between py-8 text-center px-4 border-b border-double hover:bg-indigo-600 hover:bg-opacity-10 items-center' key={elems.id} >
@@ -42,9 +40,9 @@ const dataElems = filteredData.splice(0,10).map(elems => {
         </li>
     )
 })
-
+// bg-gradient-to-b from-custom-start to-custom-start
   return (
-    <section id='market' className="market bg-gradient-to-b from-custom-start to-custom-start">
+    <section id='market' className="market   bg-gradient-to-b from-custom-start to-custom-start ">
         <div className="market__container flex flex-col px-20 py-40 sm-max:p-5 sm-max:py-20">
             <div className="market__content">
                 <h2 className='text-4xl font-bold mb-10'>Market</h2>

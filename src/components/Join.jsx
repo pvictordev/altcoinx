@@ -1,10 +1,9 @@
 import React from 'react'
-import {AiOutlineArrowDown} from "react-icons/ai"
-
 
 const Join = () => {
+  // bg-gradient-to-b from-custom-start to-custom-start
   return (
-    <section id='join' className='join bg-gradient-to-b from-custom-start to-custom-start flex flex-col pt-40 content-center pb-20'>
+    <section id='join' className='join  flex flex-col pt-40 content-center pb-20   bg-gradient-to-b from-custom-start to-custom-start '>
 
       <div className="hero__content-text flex flex-row uppercase justify-center items-start gap-x-8">
             <img className="w-20 h-20 animate-bounce l-max:hidden" src="./src/assets/currency.png" alt="" />

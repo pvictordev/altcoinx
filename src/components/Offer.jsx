@@ -3,14 +3,14 @@ import OfferBox from './OfferBox'
 import {CiWallet} from 'react-icons/ci'
 import {AiOutlineSelect, AiOutlineFileDone} from 'react-icons/ai'
 import {RiNftFill} from 'react-icons/ri'
-import {LiaMoneyBillSolid} from 'react-icons/lia' //BsCollection
+import {LiaMoneyBillSolid} from 'react-icons/lia'
 import {BsCollection} from 'react-icons/bs'
 
-
+// bg-gradient-to-b from-custom-start to-custom-start
 const Offer = () => {
   return (
     <div>
-      <section id="offer" className="offer bg-gradient-to-b from-custom-start to-custom-start p-20 pb-40">
+      <section id="offer" className="offer p-20 pb-40   bg-gradient-to-b from-custom-start to-custom-start ">
         <div className='offer__container'>
           <h1 className='text-6xl text-center mb-20 font-bold'>Our <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 '>Offer</span></h1>
 
