@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/coin" element={<Crypto />}>
-        <Route path=":coinId" element={<Crypto />}></Route>
+        <Route path=":coinId" element={<Crypto />}/>
         </Route>
       </Routes>
     </div>

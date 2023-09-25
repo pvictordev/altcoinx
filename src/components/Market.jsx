@@ -34,7 +34,8 @@ useEffect(() => {
 const dataElems = filteredData.splice(0,10).map(elems => {
     return (
       <Link
-      to={`/coin/${elems.id}`}
+      to={`/coin/${elems.id}`} 
+      element={<Crypto/>}
       >
         <li className='flex flex-row justify-between py-8 text-center px-4 border-b border-double hover:bg-indigo-600 hover:bg-opacity-10 items-center' key={elems.id} >
             <p className='text-2xl flex items-center gap-2 sm-max:text-xl'><img src={elems.image} alt="" className="w-12 inline sm-max:w-8" /> {elems.name}</p>

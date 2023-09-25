@@ -18,7 +18,6 @@ const Hero = () => {
       console.log(error)
     })
   },[])
-  console.log(data)
   
   if(!data) return null
 
