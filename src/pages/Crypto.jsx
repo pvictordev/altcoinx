@@ -8,11 +8,9 @@ const Crypto = () => {
 
   const history = useNavigate()
   const params = useParams()
+
   const[coin, setCoin]= useState({});
-
-
   const url = `https://api.coingecko.com/api/v3/coins/${params.coinId}`;
-
   useEffect(() => {
     axios.get(url).then((res) => {
       setCoin(res.data)
@@ -20,17 +18,29 @@ const Crypto = () => {
       console.log('error')
     })
   },[])
-  // console.log(coin)
-  
+
+  const [historyData, setHistoryData] = useState();
+  const [days, setDays] = useState(1);
+  const chartYear = `https://api.coingecko.com/api/v3/coins/${params.coinId}/market_chart?vs_currency=usd&days=365`;
+  useEffect(() => {
+    axios.get(chartYear).then((response) => {
+      setDays(response.data)
+    }).catch((error) => {
+      console.log(error)
+    })
+  },[])
+
+  console.log(days)
+
 
   return (
     
-    <section className='crypto w-full h-screen bg-gradient-to-b from-custom-end to-custom-start overflow-hidden'>
+    <section className='crypto w-full h-screen bg-gradient-to-b from-chart-end to-chart-start overflow-hidden'>
 
         <button className='absolute top-3 left-3' onClick={() => history(-1)}><AiOutlineArrowLeft style={{fontSize:'1.5rem'}}/></button>
 
         <div className="crypto__content  w-full h-screen flex justify-between items-center p-20 pt-24 gap-20">
-          <div className="content__crypto flex flex-col items-center text-left gap-3">
+          <div className="content__crypto flex flex-col items-center text-left gap-3 pr-10 border-r-2">
 
             {coin.image ? <img src={coin.image.large} className='w-24 h-24' alt=""/> : null }
             <h2 className='text-3xl'>{coin.name}</h2>
@@ -97,7 +107,8 @@ const Crypto = () => {
                 Market Cap : ${coin.market_data?.market_cap ? coin.market_data.market_cap.usd.toLocaleString('en-US'): null}
               </li>
   
-              <li className='text-md mb-1'>Circulating Supply : {coin.market_data ? coin.market_data.circulating_supply.toLocaleString('en-US') : null} 
+              <li className='text-md'>
+                Circulating Supply : {coin.market_data ? coin.market_data.circulating_supply.toLocaleString('en-US') : null} 
               </li>
 
             </ul>
