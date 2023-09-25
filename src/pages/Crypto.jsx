@@ -44,41 +44,60 @@ const Crypto = () => {
               
               <li className='text-md mb-1'>
                 Current Price : ${
-                coin.market_data?.current_price ? coin.market_data.current_price.usd : null
+                coin.market_data?.current_price ? coin.market_data.current_price.usd.toLocaleString('en-US') : null
                 } 
               </li>
-
-              <li className='text-md mb-1'>1h Change : {coin.market_data?.price_change_percentage_1h_in_currency ? coin.market_data.price_change_percentage_1h_in_currency.usd : null
-              }%
+      
+              <li>
+              1h Change : {coin.market_data?.price_change_percentage_1h_in_currency ? 
+              <span className={`${coin.market_data?.price_change_percentage_1h_in_currency && coin.market_data.price_change_percentage_1h_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
+              }>{coin.market_data.price_change_percentage_1h_in_currency.usd} %</span> : null
+              }
               </li>
-              <li className='text-md mb-1'>24h Change : {coin.market_data?.price_change_percentage_24h_in_currency ? coin.market_data.price_change_percentage_24h_in_currency.usd : null
-              }%
+              <li>
+              24h Change : {coin.market_data?.price_change_percentage_24h_in_currency ? 
+              <span className={`${coin.market_data?.price_change_percentage_24h_in_currency && coin.market_data.price_change_percentage_24h_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
+              }>{coin.market_data.price_change_percentage_24h_in_currency.usd} %</span> : null
+              }
               </li>
-              <li className='text-md mb-1'>7d Change : {coin.market_data?.price_change_percentage_7d_in_currency ? coin.market_data.price_change_percentage_7d_in_currency.usd : null
-              }%
+              <li>
+              7d Change : {coin.market_data?.price_change_percentage_7d_in_currency ? 
+              <span className={`${coin.market_data?.price_change_percentage_7d_in_currency && coin.market_data.price_change_percentage_7d_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
+              }>{coin.market_data.price_change_percentage_7d_in_currency.usd} %</span> : null
+              }
               </li>
-              <li className='text-md mb-1'>14d Change : {coin.market_data?.price_change_percentage_14d_in_currency ? coin.market_data.price_change_percentage_14d_in_currency.usd : null
-                }%
+              <li>
+              14d Change : {coin.market_data?.price_change_percentage_14d_in_currency ? 
+              <span className={`${coin.market_data?.price_change_percentage_14d_in_currency && coin.market_data.price_change_percentage_14d_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
+              }>{coin.market_data.price_change_percentage_14d_in_currency.usd} %</span> : null
+              }
               </li>
-              <li className='text-md mb-1'>30d Change : {coin.market_data?.price_change_percentage_30d_in_currency ? coin.market_data.price_change_percentage_30d_in_currency.usd : null
-              }% 
+              <li>
+              30d Change : {coin.market_data?.price_change_percentage_30d_in_currency ? 
+              <span className={`${coin.market_data?.price_change_percentage_30d_in_currency && coin.market_data.price_change_percentage_30d_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
+              }>{coin.market_data.price_change_percentage_30d_in_currency.usd} %</span> : null
+              }
               </li>
-              <li className='text-md mb-1'>1y Change : {coin.market_data?.price_change_percentage_1y_in_currency ? coin.market_data.price_change_percentage_1y_in_currency.usd : null
-              }%
+              <li>
+              1y Change : {coin.market_data?.price_change_percentage_1y_in_currency ? 
+              <span className={`${coin.market_data?.price_change_percentage_1y_in_currency && coin.market_data.price_change_percentage_1y_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
+              }>{coin.market_data.price_change_percentage_1y_in_currency.usd} %</span> : null
+              }
               </li>
           
               <li className='text-md mb-1'>
-                24h high : ${coin.market_data?.high_24h ? coin.market_data.high_24h.usd: null}
+                24h high : <span className='text-green-500'> ${coin.market_data?.high_24h ? coin.market_data.high_24h.usd.toLocaleString('en-US'): null}</span>
               </li>  
               <li className='text-md mb-1'>
-                24h low : ${coin.market_data?.low_24h ? coin.market_data.low_24h.usd: null}
+                24h low : <span className='text-red-500'>${coin.market_data?.low_24h ? coin.market_data.low_24h.usd.toLocaleString('en-US'): null}</span>
               </li> 
                           
-
-              <li className='text-md mb-1'>Market Cap: ${coin.market_data?.market_cap ? coin.market_data.market_cap.usd: null}
+            
+              <li className='text-md mb-1'>
+                Market Cap : ${coin.market_data?.market_cap ? coin.market_data.market_cap.usd.toLocaleString('en-US'): null}
               </li>
   
-              <li className='text-md mb-1'>Circulating Supply : {coin.market_data ? coin.market_data.circulating_supply : null} 
+              <li className='text-md mb-1'>Circulating Supply : {coin.market_data ? coin.market_data.circulating_supply.toLocaleString('en-US') : null} 
               </li>
 
             </ul>
