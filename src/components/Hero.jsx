@@ -18,26 +18,28 @@ const Hero = () => {
       console.log(error)
     })
   },[])
-
+  console.log(data)
   
   if(!data) return null
 
   
   const dataELems = data.map(elems => {
     return (
-    <Link to='/coin/:id'>
-    <a href="" className='flex flex-col items-center'>
-    <img src={elems.image} alt="" className="w-20 mb-3" />
+    <Link
+      to={`/coin/${elems.id}`}
+    >
+      <a className='flex flex-col items-center'>
+      <img src={elems.image} alt="" className="w-20 mb-3" />
 
-    <p className='text-1xl font-bold'>{elems.name} <span 
-      className={`text-2xl ${elems.price_change_percentage_24h < 0? 'text-red-600' : 'text-green-500'}`}> 
-      {elems.price_change_percentage_24h.toFixed(3)}%
-    </span>
+      <p className='text-1xl font-bold'>{elems.name} <span 
+        className={`text-2xl ${elems.price_change_percentage_24h < 0? 'text-red-600' : 'text-green-500'}`}> 
+        {elems.price_change_percentage_24h.toFixed(2)}%
+      </span>
 
-    </p>
+      </p>
 
-    <p className="text-center text-2xl font-bold">${elems.current_price.toLocaleString('en-US')}</p>
-    </a>
+      <p className="text-center text-2xl font-bold">${elems.current_price.toLocaleString('en-US')}</p>
+      </a>
     </Link>
     )
   })

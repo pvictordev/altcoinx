@@ -7,8 +7,9 @@ function App() {
   return (
     <div className='app font-space-grotesk'>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/coin/:id" element={<Crypto />}>
+        <Route path="/" element={<Home />}/>
+        <Route path="/coin" element={<Crypto />}>
+        <Route path=":coinId" element={<Crypto />}></Route>
         </Route>
       </Routes>
     </div>
