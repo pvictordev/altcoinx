@@ -12,7 +12,7 @@ export default {
       gradientColorStops: {
         'custom-start': '#0f051d',
         'custom-end': '#080749',
-        'chart-start': '#05042A',
+        'chart-start': '#04031E',
         'chart-end' : '#260D4B',
         
       },  
