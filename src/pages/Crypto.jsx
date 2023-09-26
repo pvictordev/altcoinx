@@ -11,6 +11,7 @@ const Crypto = () => {
   const params = useParams()
 
   const[coin, setCoin]= useState({});
+
   const url = `https://api.coingecko.com/api/v3/coins/${params.coinId}`;
   useEffect(() => {
     axios.get(url).then((res) => {
@@ -19,9 +20,7 @@ const Crypto = () => {
       console.log('error')
     })
   },[])
-
-
-
+  
   return (
     
     <section className='crypto w-full h-screen bg-gradient-to-b from-chart-end to-chart-start overflow-hidden'>
@@ -30,10 +29,10 @@ const Crypto = () => {
 
         <div className="crypto__content  w-full h-screen flex justify-between items-center p-20 pt-24 gap-20">
           <div className="content__crypto flex flex-col items-center text-left gap-3 border-2 p-5 rounded-2xl bg-indigo-600 bg-opacity-5">
-
+ 
             {coin.image ? <img src={coin.image.large} className='w-24 h-24' alt=""/> : null }
             <h2 className='text-3xl'>{coin.name}</h2>
-
+          
 
             <ul className="chart__statistics text-left mt-4">
 
@@ -104,7 +103,7 @@ const Crypto = () => {
 
           </div>
 
-          <div className='content__chart'>
+          <div style={{width:'800px', height:'500px'}} className='content__chart'>
               <Chart/> 
           </div>
         
