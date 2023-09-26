@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import {AiOutlineArrowLeft} from 'react-icons/ai'
-import { Bar } from 'react-chartjs-2'
+import Chart from './Chart';
 
 
 const Crypto = () => {
   
-
   const history = useNavigate()
   const params = useParams()
 
@@ -21,18 +20,6 @@ const Crypto = () => {
     })
   },[])
 
-  // const [historyData, setHistoryData] = useState();
-  // const [days, setDays] = useState(1);
-  // const chartYear = `https://api.coingecko.com/api/v3/coins/${params.coinId}/market_chart?vs_currency=usd&days=365`;
-  // useEffect(() => {
-  //   axios.get(chartYear).then((response) => {
-  //     setDays(response.data)
-  //   }).catch((error) => {
-  //     console.log(error)
-  //   })
-  // },[])
-
-  // console.log(days)
 
 
   return (
@@ -42,7 +29,7 @@ const Crypto = () => {
         <button className='absolute top-3 left-3' onClick={() => history(-1)}><AiOutlineArrowLeft style={{fontSize:'1.5rem'}}/></button>
 
         <div className="crypto__content  w-full h-screen flex justify-between items-center p-20 pt-24 gap-20">
-          <div className="content__crypto flex flex-col items-center text-left gap-3 pr-10 border-r-2">
+          <div className="content__crypto flex flex-col items-center text-left gap-3 border-2 p-5 rounded-2xl bg-indigo-600 bg-opacity-5">
 
             {coin.image ? <img src={coin.image.large} className='w-24 h-24' alt=""/> : null }
             <h2 className='text-3xl'>{coin.name}</h2>
@@ -110,7 +97,7 @@ const Crypto = () => {
               </li>
   
               <li className='text-md'>
-                Circulating Supply : {coin.market_data ? coin.market_data.circulating_supply.toLocaleString('en-US') : null} 
+                Circulating Supply : {coin.market_data ? coin.market_data.circulating_supply.toLocaleString('en-US') : null}
               </li>
 
             </ul>
@@ -118,22 +105,7 @@ const Crypto = () => {
           </div>
 
           <div className='content__chart'>
-          <Bar
-              data={{
-                labels:['Bitcoin', 'Ethereum', 'USDT', 'BNB'],
-                datasets:[
-                  {
-                    label:'Cryptocurrencies',
-                    data:[12,9,3,5]
-                  }
-                ],
-              }}
-              height={400}
-              width={600}
-              options={{
-                maintainAspectRatio:false,
-              }}
-             />
+              <Chart/> 
           </div>
         
         </div>
