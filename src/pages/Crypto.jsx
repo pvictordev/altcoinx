@@ -35,48 +35,47 @@ const Crypto = () => {
             {coin.image ? <img src={coin.image.large} className='w-24 h-24' alt=""/> : null }
             <h2 className='text-3xl'>{coin.name}</h2>
           
-
             <ul className="chart__statistics text-left mt-4 text-md">
-              <li className=' mb-1'>Symbol : {coin.symbol}</li>
-              <li className=' mb-1'>Rank : #{coin.market_cap_rank}</li>
+              <li className='mb-1'>Symbol : {coin.symbol}</li>
+              <li className='mb-1'>Rank : #{coin.market_cap_rank}</li>
               
-              <li className=' mb-1'>
+              <li className='mb-1'>
                 Current Price : ${
                 coin.market_data?.current_price ? coin.market_data.current_price.usd.toLocaleString('en-US') : null
                 } 
               </li>
       
-              <li>
+              <li className='mb-1'>
               1h Change : {coin.market_data?.price_change_percentage_1h_in_currency ? 
               <span className={`${coin.market_data?.price_change_percentage_1h_in_currency && coin.market_data.price_change_percentage_1h_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
               }>{coin.market_data.price_change_percentage_1h_in_currency.usd} %</span> : null
               }
               </li>
-              <li>
+              <li className='mb-1'>
               24h Change : {coin.market_data?.price_change_percentage_24h_in_currency ? 
               <span className={`${coin.market_data?.price_change_percentage_24h_in_currency && coin.market_data.price_change_percentage_24h_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
               }>{coin.market_data.price_change_percentage_24h_in_currency.usd} %</span> : null
               }
               </li>
-              <li>
+              <li className='mb-1'>
               7d Change : {coin.market_data?.price_change_percentage_7d_in_currency ? 
               <span className={`${coin.market_data?.price_change_percentage_7d_in_currency && coin.market_data.price_change_percentage_7d_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
               }>{coin.market_data.price_change_percentage_7d_in_currency.usd} %</span> : null
               }
               </li>
-              <li>
+              <li className='mb-1'>
               14d Change : {coin.market_data?.price_change_percentage_14d_in_currency ? 
               <span className={`${coin.market_data?.price_change_percentage_14d_in_currency && coin.market_data.price_change_percentage_14d_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
               }>{coin.market_data.price_change_percentage_14d_in_currency.usd} %</span> : null
               }
               </li>
-              <li>
+              <li className='mb-1'>
               30d Change : {coin.market_data?.price_change_percentage_30d_in_currency ? 
               <span className={`${coin.market_data?.price_change_percentage_30d_in_currency && coin.market_data.price_change_percentage_30d_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
               }>{coin.market_data.price_change_percentage_30d_in_currency.usd} %</span> : null
               }
               </li>
-              <li>
+              <li className='mb-1'>
               1y Change : {coin.market_data?.price_change_percentage_1y_in_currency ? 
               <span className={`${coin.market_data?.price_change_percentage_1y_in_currency && coin.market_data.price_change_percentage_1y_in_currency.usd < 0 ? 'text-red-500' : 'text-green-500'}`
               }>{coin.market_data.price_change_percentage_1y_in_currency.usd} %</span> : null
@@ -91,7 +90,7 @@ const Crypto = () => {
               </li> 
                           
             
-              <li className=' mb-1'>
+              <li className='mb-1'>
                 Market Cap : ${coin.market_data?.market_cap ? coin.market_data.market_cap.usd.toLocaleString('en-US'): null}
               </li>
   

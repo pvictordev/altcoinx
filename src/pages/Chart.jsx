@@ -107,7 +107,7 @@ const Chart = () => {
   return (
     <div className='chart flex justify-center flex-col items-center w-8/12 xl-max:w-3/5 lg-max:w-full'>
         <Line options={options} data={data}/>
-        <div className='chart__buttons mt-10 flex w-4/5 justify-between'>
+        <div className='chart__buttons mt-10 flex w-4/5 justify-between '>
             <button className='border-2 p-2 rounded-xl hover:bg-indigo-600 hover:bg-opacity-50'
             onClick={()=> fetchData(1)}>24 hours</button>
 
