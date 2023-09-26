@@ -23,24 +23,24 @@ const Crypto = () => {
   
   return (
     
-    <section className='crypto w-full h-screen bg-gradient-to-b from-chart-end to-chart-start overflow-hidden'>
-    
+    <section className='crypto w-full h-screen bg-gradient-to-b from-chart-end to-chart-start overflow-hidden xl-max:overflow-auto'>
+
         <button className='absolute top-3 left-3' onClick={() => history(-1)}><AiOutlineArrowLeft style={{fontSize:'1.5rem'}}/></button>
 
-        <div className="crypto__content  w-full h-screen flex justify-between items-center p-20 pt-24 gap-20">
-          <div className="content__crypto flex flex-col items-center text-left gap-3 border-2 p-5 rounded-2xl bg-indigo-600 bg-opacity-5">
+        
+        <div className="crypto__content flex justify-between items-center p-20 pt-24 gap-20 xl-max:overflow-auto xl-max:grid xl-max:justify-center xl-max:p-5 xl-max:grid-cols-1" >
+
+          <div className="content__crypto flex flex-col items-center text-left gap-3 border-2 p-6 rounded-3xl bg-indigo-600 bg-opacity-5 border-indigo-950 ">
  
             {coin.image ? <img src={coin.image.large} className='w-24 h-24' alt=""/> : null }
             <h2 className='text-3xl'>{coin.name}</h2>
           
 
-            <ul className="chart__statistics text-left mt-4">
-
-
-              <li className='text-md mb-1'>Symbol : {coin.symbol}</li>
-              <li className='text-md mb-1'>Rank : #{coin.market_cap_rank}</li>
+            <ul className="chart__statistics text-left mt-4 text-md">
+              <li className=' mb-1'>Symbol : {coin.symbol}</li>
+              <li className=' mb-1'>Rank : #{coin.market_cap_rank}</li>
               
-              <li className='text-md mb-1'>
+              <li className=' mb-1'>
                 Current Price : ${
                 coin.market_data?.current_price ? coin.market_data.current_price.usd.toLocaleString('en-US') : null
                 } 
@@ -83,19 +83,19 @@ const Crypto = () => {
               }
               </li>
           
-              <li className='text-md mb-1'>
+              <li className='mb-1'>
                 24h high : <span className='text-green-500'> ${coin.market_data?.high_24h ? coin.market_data.high_24h.usd.toLocaleString('en-US'): null}</span>
               </li>  
-              <li className='text-md mb-1'>
+              <li className=' mb-1'>
                 24h low : <span className='text-red-500'>${coin.market_data?.low_24h ? coin.market_data.low_24h.usd.toLocaleString('en-US'): null}</span>
               </li> 
                           
             
-              <li className='text-md mb-1'>
+              <li className=' mb-1'>
                 Market Cap : ${coin.market_data?.market_cap ? coin.market_data.market_cap.usd.toLocaleString('en-US'): null}
               </li>
   
-              <li className='text-md'>
+              <li className=''>
                 Circulating Supply : {coin.market_data ? coin.market_data.circulating_supply.toLocaleString('en-US') : null}
               </li>
 
@@ -103,7 +103,7 @@ const Crypto = () => {
 
           </div>
 
-          <div style={{width:'800px', height:'500px'}} className='content__chart'>
+          <div className='content__chart w-8/12 xl-max:w-full' >
               <Chart/> 
           </div>
         
