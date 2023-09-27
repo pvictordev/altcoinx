@@ -27,10 +27,4 @@ Altcoinx offers the following features:
 
 3. **Comprehensive Data**: Altcoinx offers a wide range of data, including current and historical prices, market capitalization, trading volume, and more, allowing users to make informed investment decisions.
 
-<!-- ## How to Use
-To run Altcoinx locally or integrate it into your project, follow these steps:
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/pvictordev/altcoinx.git -->
 
