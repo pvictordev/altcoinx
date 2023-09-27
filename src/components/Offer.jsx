@@ -5,6 +5,7 @@ import {AiOutlineSelect, AiOutlineFileDone} from 'react-icons/ai'
 import {RiNftFill} from 'react-icons/ri'
 import {LiaMoneyBillSolid} from 'react-icons/lia'
 import {BsCollection} from 'react-icons/bs'
+import offerImg from '../assets/currency(2).png'
 
 // bg-gradient-to-b from-custom-start to-custom-start
 const Offer = () => {
@@ -36,7 +37,7 @@ const Offer = () => {
             </div>
             
             <div className="offer__content-2 m-x-auto flex flex-row justify-center items-center w-70 h-full mx-auto lg-max:hidden">
-              <img src='src/assets/currency(2).png' className='center'></img>
+              <img src={offerImg} className='center'></img>
             </div>
 
             <div className='offer__content-3 flex flex-col gap-y-10 '>
