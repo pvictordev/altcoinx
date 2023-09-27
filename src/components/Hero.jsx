@@ -2,6 +2,9 @@ import axios from 'axios';
 import React, {useState, useEffect} from 'react'
 import {AiOutlineArrowDown} from "react-icons/ai"
 import { Link } from 'react-router-dom';
+import btc from '../assets/bitcoin-coin.png'; 
+import eth from '../assets/ethereum-coin.png'; 
+
 // import axios from 'axios';
 
 
@@ -48,15 +51,15 @@ const Hero = () => {
   
 
   return (
-    <div className="hero__content flex flex-col items-center justify-center mt-44">
+    <div className="hero__content flex flex-col items-center justify-center mt-24 lg-max:mt-44 sm-max:mt-20">
 
         <div className="hero__content-text flex flex-row">
-            <img className="w-20 h-20 animate-bounce l-max:hidden" src="./src/assets/bitcoin-coin.png" alt="" />
+            <img className="w-20 h-20 animate-bounce l-max:hidden" src={btc} alt="" />
               <h1 className="font-bold text-8xl break-words text-center leading-tight lg-max:text-7xl xs-max:text-6xl">TRACK AND BUY
               <br/>
               <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600'>CRYPTO CURRENCIES</span>
               </h1>
-            <img className="w-20 h-20 animate-bounce l-max:hidden" src="./src/assets/ethereum-coin.png" alt="" />
+            <img className="w-20 h-20 animate-bounce l-max:hidden" src={eth} alt="" />
           
         </div>
 
