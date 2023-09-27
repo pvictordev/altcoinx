@@ -28,13 +28,13 @@ const Crypto = () => {
         <button className='absolute top-3 left-3' onClick={() => history(-1)}><AiOutlineArrowLeft style={{fontSize:'1.5rem'}}/></button>
 
         
-        <div className="crypto__content flex justify-between items-center p-20 pt-24 gap-20 xl-max:overflow-auto lg-max:grid lg-max:justify-center lg-max:p-5 lg-max:grid-cols-1" >
+        <div className="crypto__content flex justify-between items-center p-20 pt-24 gap-20 xl-max:overflow-auto lg-max:grid lg-max:justify-center lg-max:p-10 lg-max:grid-cols-1" >
 
           <div className="content__crypto flex flex-col items-center text-left gap-3 border-2 p-6 rounded-3xl bg-indigo-600 bg-opacity-5 border-indigo-950 ">
- 
+          {/* text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600  */}
             {coin.image ? <img src={coin.image.large} className='w-24 h-24' alt=""/> : null }
-            <h2 className='text-3xl'>{coin.name}</h2>
-          
+            <h2 className='text-3xl '>{coin.name}</h2>
+         
             <ul className="chart__statistics text-left mt-4 text-md">
               <li className='mb-1'>Symbol : {coin.symbol}</li>
               <li className='mb-1'>Rank : #{coin.market_cap_rank}</li>
@@ -101,11 +101,7 @@ const Crypto = () => {
             </ul>
 
           </div>
-
-    
-          <Chart/> 
-         
-        
+          <Chart/>  
         </div>
     </section>
   )
