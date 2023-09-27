@@ -4,12 +4,19 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 import { Link } from 'react-router-dom';
 import btc from '../assets/bitcoin-coin.png'; 
 import eth from '../assets/ethereum-coin.png'; 
-
 // import axios from 'axios';
 
 
 
 const Hero = () => {
+
+  function Loader() {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <div className="animate-spin rounded-full border-t-4 border-blue-500 border-opacity-25 h-16 w-16"></div>
+      </div>
+    );
+  }
 
   const [data, setData] = useState(null)
 
@@ -18,12 +25,14 @@ const Hero = () => {
   useEffect(() => {
     axios.get(urlMarket).then((response) => {
       setData(response.data)
+     
     }).catch((error) => {
       console.log(error)
+      
     })
   },[])
   
-  if(!data) return null
+  if(!data) return <Loader/>
 
   
   const dataELems = data.map(elems => {

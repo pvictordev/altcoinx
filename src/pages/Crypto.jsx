@@ -6,6 +6,14 @@ import Chart from './Chart';
 
 
 const Crypto = () => {
+
+  function Loader() {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <div className="animate-spin rounded-full border-t-4 border-blue-500 border-opacity-25 h-16 w-16"></div>
+      </div>
+    );
+  }
   
   const history = useNavigate()
   const params = useParams()
@@ -20,6 +28,16 @@ const Crypto = () => {
       console.log('error')
     })
   },[])
+
+  // function Loader() {
+  //   return (
+  //     <div className="flex justify-center items-center h-screen">
+  //       <div className="animate-spin rounded-full border-t-4 border-blue-500 border-opacity-25 h-16 w-16"></div>
+  //     </div>
+  //   );
+  // }
+  if(!coin) return null
+
   
   return (
     
