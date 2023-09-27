@@ -25,13 +25,13 @@ const Nav = () => {
     };
   }, []);
 
-  const navClasses = `nav fixed w-full z-50 justify-center flex flex-row p-12 mx-auto gap-56 lg-max:gap-28 xl-max:gap-40 l-max:max-w-none l-max:justify-between l-max:m-0 xs-max:pt-12 xs-max:pb-12 xs-max:pr-4 xs-max:pl-4 ${
+  const navClasses = `nav fixed w-full z-50 justify-center flex flex-row p-12 mx-auto gap-56 lg-max:gap-28 xl-max:gap-40 l-max:max-w-none l-max:justify-between l-max:m-0 xs-max:justify-between xs-max:gap-30 xs-max:pt-12 xs-max:pb-12 xs-max:px-4 xxs-max:gap-0 ${
     scrollY > 50 ? 'bg-dark' : ''
   }`;
   return (
     
     <nav className={navClasses}>
-        <a href="#home"><h1 className='nav__logo font-bold text-3xl tracking-widest'>ALTCOINX</h1></a>
+        <a href="#home"><h1 className='nav__logo font-bold text-3xl tracking-widest xxs-max:text-xl'>ALTCOINX</h1></a>
         {/* <img className="w-28 h-5" src="src/assets/altcoinx-logo.png" alt="" /> */}
         
           <ul className='nav__menu list-none gap-14 flex flex-row l-max:hidden'>
