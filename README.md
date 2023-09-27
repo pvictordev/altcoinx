@@ -10,7 +10,7 @@ Altcoinx is a website that allows users to access real-time information about va
 **Live Demo**: [Altcoinx](https://altcoinx-one.vercel.app/)
 
 ## Technologies Used
-The Coindom website is built using the following technologies:
+The Altcoinx Web App is built using the following technologies:
 - **React**
 - **Tailwind**
 - **Coingecko API**
