@@ -1,6 +1,6 @@
 <!-- [![Header](https://github.com/pvictordev/altcoinx/blob/main/src/assets/crypto-icon.png)](https://github.com/pvictordev/altcoinx/tree/main) -->
 <p align="center">
-  <img width="200" height="200" src="https://github.com/pvictordev/altcoinx/blob/main/src/assets/crypto-icon.png">
+  <img width="200" height="200" src="https://github.com/pvictordev/altcoinx/blob/main/src/assets/altcoinx.png">
 </p>
 
 ## Altcoinx - Cryptocurrency Tracker Web App
