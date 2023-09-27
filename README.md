@@ -7,7 +7,7 @@
 
 Altcoinx is a website that allows users to access real-time information about various cryptocurrencies. The website fetches its data from the Coingecko API, a trusted source for cryptocurrency information, ensuring that users can make informed decisions when it comes to their cryptocurrency investments.
 
-**Live Demo**: [Altcoinx]([https://altcoinx-silk.vercel.app/](https://altcoinx-one.vercel.app/))
+**Live Demo**: [Altcoinx](https://altcoinx-one.vercel.app/)
 
 ## Technologies Used
 The Coindom website is built using the following technologies:
