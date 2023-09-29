@@ -60,7 +60,7 @@ const Hero = () => {
   
 
   return (
-    <div className="hero__content flex flex-col items-center mt-48">
+    <div className="hero__content flex flex-col items-center mt-48 sm-max:mt-60">
 
         <div className="hero__content-text flex flex-row">
             <img className="w-20 h-20 animate-bounce l-max:hidden" src={btc} alt="" />
