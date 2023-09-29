@@ -25,12 +25,14 @@ const Nav = () => {
     };
   }, []);
 
-  const navClasses = `nav fixed w-full z-50 justify-center flex flex-row p-12 mx-auto gap-56 lg-max:gap-28 xl-max:gap-40 l-max:max-w-none l-max:justify-between l-max:m-0 xs-max:justify-between xs-max:gap-30 xs-max:pt-12 xs-max:pb-12 xs-max:px-4 xxs-max:gap-0 ${
-    scrollY > 50 ? 'bg-dark' : ''
+  const navClasses = `nav w-full fixed z-50 ${
+    scrollY > 60 ? 'bg-dark' : ''
   }`;
   return (
     
     <nav className={navClasses}>
+
+      <div className='nav__content flex flex-row justify-between max-w-7xl mx-auto p-12'>
         <a href="#home"><h1 className='nav__logo font-bold text-3xl tracking-widest xxs-max:text-xl'>ALTCOINX</h1></a>
         {/* <img className="w-28 h-5" src="src/assets/altcoinx-logo.png" alt="" /> */}
         
@@ -70,8 +72,6 @@ const Nav = () => {
 
         </ul>
         
-        
-
         <div className="nav__socials flex flex-row items-center justify-between gap-6 ">
             <a href="https://twitter.com/home"><BiLogoTwitter style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} className='xs-max:hidden' /></a>
             <a href="https://discord.com/"><BiLogoDiscordAlt style={{ fontSize: '1.7rem', cursor:'pointer', background:'' }} className='xs-max:hidden'/></a>
@@ -79,7 +79,7 @@ const Nav = () => {
             <AiOutlineMenu style={{fontSize:'1.5rem'}} className='hidden cursor-pointer l-max:block' onClick={toggleMenu}/>
   
         </div>
-        
+      </div>
     </nav>
     
   )
