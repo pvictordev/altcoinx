@@ -32,9 +32,12 @@ const Nav = () => {
     
     <nav className={navClasses}>
 
-      <div className='nav__content flex flex-row justify-between max-w-7xl mx-auto p-12'>
-        <a href="#home"><h1 className='nav__logo font-bold text-3xl tracking-widest xxs-max:text-xl'>ALTCOINX</h1></a>
-        {/* <img className="w-28 h-5" src="src/assets/altcoinx-logo.png" alt="" /> */}
+      <div className='nav__content flex flex-row justify-between max-w-7xl mx-auto py-11 px-4'>
+        <a href="#home" className='flex items-center gap-3'>
+        <img className="w-10 h-10" src="src/assets/altcoinx.png" alt="" />
+          <h1 className='nav__logo font-bold text-3xl tracking-widest xxs-max:text-xl'>ALTCOINX</h1>
+        </a>
+       
         
           <ul className='nav__menu list-none gap-14 flex flex-row l-max:hidden'>
             <li>

@@ -6,9 +6,8 @@ const HomePage = () => {
 
   return (
     <div>
-   
-    <div className='w-full h-screen  flex flex-col gap-20 lg-max:gap-14 bg-gradient-to-b from-custom-end to-custom-start justify-between items-center'>
       <Nav/>
+    <div className='w-full h-screen flex flex-col justify-between bg-gradient-to-b from-custom-end to-custom-start items-center'>
       <Hero/> 
     </div>
     </div>
