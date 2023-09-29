@@ -4,9 +4,6 @@ import {AiOutlineArrowDown} from "react-icons/ai"
 import { Link } from 'react-router-dom';
 import btc from '../assets/bitcoin-coin.png'; 
 import eth from '../assets/ethereum-coin.png'; 
-// import axios from 'axios';
-
-
 
 const Hero = () => {
 

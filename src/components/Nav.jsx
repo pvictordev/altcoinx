@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {BiLogoTwitter, BiLogoDiscordAlt} from 'react-icons/bi'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+import altcoinx from '../assets/altcoinx.png'
 
 
 const Nav = () => {
@@ -34,7 +35,7 @@ const Nav = () => {
 
       <div className='nav__content flex flex-row justify-between max-w-7xl mx-auto py-11 px-4'>
         <a href="#home" className='flex items-center gap-3'>
-        <img className="w-10 h-10 xxs-max:w-8 xxs-max:h-8" src="src/assets/altcoinx.png" alt="" />
+        <img className="w-10 h-10 xxs-max:w-8 xxs-max:h-8" src={altcoinx} alt="" />
           <h1 className='nav__logo font-bold text-3xl tracking-widest xxs-max:text-xl'>ALTCOINX</h1>
         </a>
        
