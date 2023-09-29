@@ -10,10 +10,9 @@ import offerImg from '../assets/currency(2).png'
 // bg-gradient-to-b from-custom-start to-custom-start
 const Offer = () => {
   return (
-    <div>
-      <section id="offer" className="offer p-20 pb-40   bg-gradient-to-b from-custom-start to-custom-start ">
-        <div className='offer__container'>
-          <h1 className='text-6xl text-center mb-20 font-bold'>Our <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 '>Offer</span></h1>
+    <section id="offer" className="offer bg-gradient-to-b from-custom-start to-custom-start ">
+        <div className='offer__container px-20 py-20 xxs-max:px-10'>
+          <h1 className='text-6xl text-center mb-20 font-bold xxs-max:text-5xl xxs-max:mb-15'>Our <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 '>Offer</span></h1>
 
           <div className='offer__content grid grid-cols-3 gap-10 lg-max:grid-cols-1'>
             <div className='offer__content-1 flex flex-col gap-y-10'>
@@ -62,8 +61,7 @@ const Offer = () => {
             
           </div>
         </div>
-      </section>
-    </div>
+    </section>
   )
 }
 
