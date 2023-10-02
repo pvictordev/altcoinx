@@ -46,7 +46,6 @@ const Hero = () => {
       </span>
 
       </p>
-
       <p className="text-center text-2xl font-bold">${elems.current_price.toLocaleString('en-US')}</p>
       </a>
     </Link>
@@ -54,14 +53,12 @@ const Hero = () => {
   })
 
 
-  
-
   return (
     <div className="hero__content flex flex-col items-center mt-48 sm-max:mt-60">
 
         <div className="hero__content-text flex flex-row">
             <img className="w-20 h-20 animate-bounce l-max:hidden" src={btc} alt="" />
-              <h1 className="font-bold text-8xl break-words text-center leading-tight lg-max:text-7xl xs-max:text-6xl xxs-max:text-4xl">TRACK AND BUY
+              <h1 className="font-bold text-8xl lg-max:text-7xl xs-max:text-6xl xxs-max:text-4xl break-words text-center leading-tight">TRACK AND BUY
               <br/>
               <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600'>CRYPTO CURRENCIES</span>
               </h1>

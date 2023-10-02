@@ -26,6 +26,7 @@ export default {
       screens: {
         'xl-max': { 'max': '1280px' },
         'lg-max': { 'max': '1024px' },
+        'market-max': { 'max': '1094px' },
         'l-max': {'max' : '900px'},
         'md-max': { 'max': '768' },
         'sm-max': { 'max': '640px' },

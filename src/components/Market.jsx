@@ -51,7 +51,7 @@ const dataElems = filteredData.splice(0,10).map(elems => {
     <section id='market' className="market bg-gradient-to-b from-custom-start to-custom-start">
         <div className="market__container flex flex-col py-20 px-20 xs-max:px-10">
             <div className="market__content">
-                <h2 className='text-4xl font-bold mb-10'>Market</h2>
+                <h2 className='text-3xl font-bold mb-10'>Market</h2>
                 
                 <input 
                   type="text" 
