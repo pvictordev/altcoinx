@@ -27,6 +27,7 @@ const Hero = () => {
       console.log(error)
       
     })
+    
   },[])
   
   if(!data) return <Loader/>

@@ -11,7 +11,7 @@ import offerImg from '../assets/currency(2).png'
 const Offer = () => {
   return (
     <section id="offer" className="offer bg-gradient-to-b from-custom-start to-custom-start ">
-        <div className='offer__container px-20 py-20 xxs-max:px-10'>
+        <div className='offer__container p-20 xxs-max:px-10'>
           <h1 className='text-8xl text-center mb-20 font-bold lg-max:text-7xl xs-max:text-6xl xxs-max:text-4xl xxs-max:mb-15'>Our <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 '>Offer</span></h1>
 
           <div className='offer__content grid grid-cols-3 gap-10 lg-max:grid-cols-1'>
